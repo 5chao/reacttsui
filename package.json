@@ -4,7 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "dumi dev",
+    "build:site": "rimraf doc-site && dumi build",
+    "preview:site": "cross-env SITE_BUILDENV=PREVIEW npm run build:site && serve doc-site",
+    "deploy:site": "npm run build:site && gh-pages -d doc-site",
     "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5chao/reacttsui.git"
   },
   "husky": {
     "hooks": {
@@ -35,10 +43,14 @@
     "@types/react-dom": "^17.0.8",
     "@umijs/fabric": "^2.6.2",
     "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
+    "dumi": "^1.1.23",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "serve": "^12.0.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
