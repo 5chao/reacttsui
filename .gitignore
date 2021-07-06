@@ -1,3 +1,11 @@
 /node_modules
 .umi-production
-.umi
+
+# umi
+/src/.umi
+/src/.umi-production
+/src/.umi-test
+/.env.local
+
+/.idea
+.history
