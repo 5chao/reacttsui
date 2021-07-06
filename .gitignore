@@ -1,5 +1,18 @@
+# dependencies
 /node_modules
-.umi-production
+/npm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
+/mock
+
+# production
+/dist
+
+# misc
+.DS_Store
+.history
+.vscode
 
 # umi
 /src/.umi
@@ -8,4 +21,3 @@
 /.env.local
 
 /.idea
-.history
