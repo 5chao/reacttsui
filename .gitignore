@@ -7,6 +7,8 @@
 /mock
 # production
 /dist
+/doc-site
+doc-site
 
 # misc
 .DS_Store
@@ -18,5 +20,4 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
-/doc-site
 /.idea
