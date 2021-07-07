@@ -6,9 +6,12 @@
 /package-lock.json
 /mock
 # production
+/build
 /dist
+/lib
+/esm
 /doc-site
-doc-site
+/types
 
 # misc
 .DS_Store
